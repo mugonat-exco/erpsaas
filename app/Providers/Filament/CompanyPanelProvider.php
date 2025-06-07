@@ -112,7 +112,7 @@ class CompanyPanelProvider extends PanelProvider
                     ->modals()
                     ->socialite(
                         condition: ! $isDemoEnvironment,
-                        providers: [Provider::Github],
+                        providers: [Provider::Github, Provider::Google, Provider::LinkedIn],
                         features: [Feature::RememberSession, Feature::ProviderAvatars],
                     ),
                 PanelShiftDropdown::make()
@@ -124,7 +124,7 @@ class CompanyPanelProvider extends PanelProvider
                     }),
             ])
             ->colors([
-                'primary' => Color::Indigo,
+                'primary' => Color::Blue,
             ])
             ->navigation(function (NavigationBuilder $builder): NavigationBuilder {
                 return $builder

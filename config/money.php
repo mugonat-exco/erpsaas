@@ -1914,7 +1914,7 @@ return [
             'entity' => 'Zimbabwe',
             'precision' => 2,
             'subunit' => 100,
-            'symbol' => '$',
+            'symbol' => 'ZWG',
             'symbol_first' => true,
             'decimal_mark' => '.',
             'thousands_separator' => ',',
